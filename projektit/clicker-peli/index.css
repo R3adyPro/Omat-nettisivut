@@ -1,0 +1,111 @@
+body{
+    background-color:rgb(0, 150, 255);
+}
+h1{
+    margin-top: 50px;
+    margin-left: -15px;
+}
+.box1{
+    word-break: break-all;
+    margin-left: 710px;
+}
+#btn1{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 10px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    position: absolute;
+    top: 400px;
+    left: 690px;
+}
+#one{
+    margin-top: 520px;
+    margin-left: 415px;
+}
+#two{
+    margin-top: -33px;
+    margin-left: 565px;
+}
+#tree{
+    margin-top: -33px;
+    margin-left: 710px;
+}
+#four{
+    margin-top: -33px;
+    margin-left: 860px;
+}
+#five{
+    margin-top: -33px;
+    margin-left: 1005px;
+}
+#six{
+    margin-top: -550px;
+    margin-left: 714px;
+}
+#seven{
+    margin-top: 520px;
+    margin-left: 420px;
+}
+#eight{
+    margin-top: -33px;
+    margin-left: 570px;
+}
+#nine{
+    margin-top: -33px;
+    margin-left: 720px;
+}
+#ten{
+    margin-top: -33px;
+    margin-left: 865px;
+}
+#eleven{
+    margin-top: -33px;
+    margin-left: 1015px;
+}
+img[src*="porsche-158149_960_720.png"]{
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    top: 200px;
+    left: 550px;
+
+}
+img[src*="spoiler.png"]{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 390px;
+}
+img[src*="bumper.png"]{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 540px;
+}
+img[src*="tyres.jpg"]{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 690px;
+}
+img[src*="rim.png"]{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 990px;
+}
+img[src*="diffuser.png"]{
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    top: 500px;
+    left: 840px;
+}

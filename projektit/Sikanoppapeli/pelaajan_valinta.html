@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="pelaajan_valinta.css">
+    <title>pelaajan valinta</title>
+</head>
+<body>
+    <div class="modal" id="popOhjeet1">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('popOhjeet1').style.display='none'; Pelaajat()">Pelaamaan</span>
+            <h1>Säännöt - Sika yhdellä nopalla</h1>
+            <p>Pelin tarkoitus on kerätä sata pistettä tai enemmän (pistemäärän voi sopia ennen peliä) heittämällä noppaa tai noppia ja laskemalla heittojen summa yhteen.
+        
+                Pelaaja heittää omalla vuorollaan noppaa niin pitkään, kunnes
+                
+                heittää ykkösen
+                päättää lopettaa heittämisen.
+                Jos pelaaja heittää ykkösen, hänen vuoronsa loppuu ja sen kierroksen heittojen summa nollataan. Vuoro siirtyy seuraavalle pelaajalle. Jos pelaaja päättää lopettaa heittämisen ennen kuin hän heittää ykkösen, heittojen summa lasketaan yhteen ja lisätään edellisen kierroksen summaan. Tämän jälkeen vuoro siirtyy seuraavalle pelaajalle.</p>
+            <h1>Esimerkkejä pelitilanteista yhdellä nopalla</h2>
+            <h2>Esimerkki 1:</h2>
+            <p>Ville heittää ensimmäisellä heitollaan kolme ja päättää jatkaa heittämistä. Hän heittää tämän jälkeen vielä 6, 6, 4, 3, 5, 1. Koska hän heitti ykkösen, Villen vuoro päättyy ja hän ei saa tällä heittovuorollaan yhtään pistettä.</p>
+            <h2>Esimerkki 2:</h2>
+            <p>Mari heittää ensimmäisellä kutosen ja päättää jatkaa heittämistä. Mari heittää vielä silmäluvut 2, 4, 3, 4, ja lopettaa heittämisen. Koska Mari itse päätti päättää vuoronsa sen sijaan, että vuoro olisi loppunut ykkösen heittämiseen, saa Mari omalla vuorollaan yhteensä 19 pistettä (6+2+4+3+4=19).</p>
+            <h1>Säännöt - Sika kahdella nopalla</h1>
+            <p>Sikaa voit pelata kahdella nopalla, jolloin säännöt muuttuvat hieman: Kun heität tuplat, saat tuplapisteet (esim. kaksi kolmosta on 12 pisteen arvoinen heitto) Kun heität kaksi ykköstä, saat 25 pistettä Kun heität vain toisella nopalla ykkösen, vuoro siirtyy seuraavalle pelaajalle etkä saa pisteitä Kun heität kolme tuplaa peräkkäin, vuoro siirtyy seuraavalle pelaajalle etkä saa pisteitä. Sika ei siis ole tämän monimutkaisempi noppapeli. Se on nopeatempoinen peli, jonka parissa aika kuluu rattoisasti.</p>
+        </div>
+    </div>
+    <div class="modal" id="popOhjeet">
+        <div class="modal-content">
+            <span class="close" onclick="document.getElementById('popOhjeet').style.display='none';">Seuraava</span>
+            <form>
+                <div class="input-laatikko">
+                    <label>PELAAJAN NIMI</label>
+                    <input type="text" id="nimi" size="20">
+                    <button type="button" onclick="lisaaPelaaja()">LISÄÄ</button>
+                </div>
+            </form>
+            <div class="pelaajat">
+                <p id="pelaaja1"></p>
+                <p id="pelaaja2"></p>
+                <p id="pelaaja3"></p>
+                <p id="pelaaja4"></p>
+            </div>
+            <button type="button" class="noppa" id="noppa1" onclick="yksNoppa()">Yhden nopan peli muoto</button>
+            <button type="button" class="noppa" id="noppa2" onclick="kaksNoppaa()">Kahden nopan peli muoto</button>
+            
+            <label id="piste">PISTE MÄÄRÄ</label>
+            <input type="text" id="pistemaara" size="20">
+            <button type="button" id="lisaa" onclick="lisaapiste()">LISÄÄ</button>
+        </div>
+    </div>
+
+    <table id="testi">
+        <tr>
+            <th><p id="pelaajat1"></p></th>
+            <th><p id="pelaajat2"></p></th>
+            <th><p id="pelaajat3"></p></th>
+            <th><p id="pelaajat4"></p></th>
+        </tr>
+        <tr>
+            <th><p id="pisteet1"></p></th>
+            <th><p id="pisteet2"></p></th>
+            <th><p id="pisteet3"></p></th>
+            <th><p id="pisteet4"></p></th>  
+        </tr>
+    </table>
+    <h1 id="numero" class="numero"></h1>
+    <h1 id="numero2" class="numero2"></h1>
+    <button type="button" id="nopanHeitto" onclick="Pelaa()">Heitä noppaa</button>
+    <h1 id="yhteen" class="yhteen"></h1>
+
+    <button type="button" id="lopetaVuoro" onclick="lopetaPeli()">Lopeta Vuoro</button>
+
+    <script type="text/javascript" src="pelaajan_valinta.js"></script>
+
+    
+</body>
+</html>

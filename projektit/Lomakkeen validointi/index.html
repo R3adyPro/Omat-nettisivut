@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Rekisteröitymislomake</h1>
+    <p>Siirry kentästä toiseen tab-näppäimellä</p>
+    <form action="">
+    <label>
+        <span>Käyttäjä ID: </span>
+        <input type="text" id="id" size="10">
+    </label>
+    <label> 
+        <span>Salasana:</span>
+        <input type="text" id="salasana" size="10">
+    </label>
+    <label> 
+        <span>Nimi: </span>
+        <input type="text" id="nimi" size="30">
+    </label> 
+    <label>
+        <span>Osoite: </span> 
+        <input type="text" id="osoite" size="30">
+    </label> 
+    <label>
+        <span>Maa: </span> 
+        <select name="maa" id="maa">
+            <option value="">Valitse maa</option>
+            <option value="">Suomi</option>
+            <option value="">Ruotsi</option>
+            <option value="">Norja</option>
+            <option value="">Tanska</option>
+        </select>
+    </label> 
+    <label>
+        <span>Postinumero: </span> 
+        <input type="text" id="pNumero" size="15">
+    </label> 
+    <label>
+        <span>Sähköposti: </span> 
+        <input type="text" id="sPosti" size="30">
+    </label>     
+    <label>
+        <span>Sukupuoli: </span> 
+        <input name="x" type="radio" id="mies">Mies 
+        <input name="x" type="radio" id="nainen">Nainen 
+    </label>     
+    <label>
+        <span>Kieli: </span> 
+        <input name="x" type="radio" id="suomi">Suomi 
+        <input name="x" type="radio" id="muuSuomi">Muu kuin suomi
+    </label> 
+    <label class="textarea1">
+        <span>Lisätietoja: </span> 
+        <textarea name="lTietoja" id="lTietoja"></textarea>
+    </label>
+    <button type="button" id="btn" onclick="Laheta()" style="margin-left: 130px; margin-top: 6px;">Läheta</button><br><br>
+    </form>
+
+    <p id="demo" style="margin-left: 48px;"></p>
+    
+
+
+
+
+
+
+    <script src="index.js"></script>
+</body>
+</html>
