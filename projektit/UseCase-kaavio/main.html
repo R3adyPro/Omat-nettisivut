@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UseCase prototyyppi</title>
+    <link rel="stylesheet" href=tyyli.css>
+</head>
+<body>
+    <div>
+        <h1 id="otsikko">Äänestäminen</h1>
+    </div>
+    <div id="tilanVaihto">
+        <button onclick="Vaihdatilaa()">Vaihda tilaa</button>
+    </div>
+    <div id="form">
+        <p>Paras ohjelmointi kieli</p>
+        <form>
+            <input type="radio" id="html" value="1" name="kieli">
+            <label for="html">HTML</label><br>
+            <input type="radio" id="css" value="2" name="kieli">
+            <label for="css">CSS</label><br>
+            <input type="radio" id="javascript"value="3" name="kieli">
+            <label for="javascript">JavaScript</label><br>
+            <br>
+            <button id="aanestys" type="button" onclick="ClearAndVote()">Submit</button> <button id="näytä" type="button" onclick="nayta()">Näytä tilanne</button>
+        </form>
+        <div id="tulokset" class="modal">
+            <div class="modal-content">
+              <span class="close">&times;</span>
+              <p id="HTML"></p>
+              <p id="CSS"></p>
+              <p id="JAVA"></p>
+            </div>
+        </div>
+ 
+
+    <div id="forms">
+        <br>
+    </div>
+
+    <div id="piilota">
+        <br>
+        <label for="Kysymys">Kysymys</label>
+        <input type="text" id="kysymys">
+        <br>
+        <select name="vaihtoehdot">
+            <option value="radio">Radio</option>
+        </select>
+        <label for="vastaus"></label>
+        <input type="text" id="vastaus">
+        <input type="button" value="Lisää vastaus" onclick="Uudenluominen('forms', 'radio', 'kysymys', 'vastaus');">
+        <input type="button" value="Lopeta" onclick="Lopeta()">
+    </div>
+    <script src="toiminta.js"></script>
+</body>
+</html>
